@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="11/05/23||20:24:18" using="Simscape Multibody Link Version 7.4" from="SolidWorks 31.2.1"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Hexa_with_Arm" uid="Hexa_with_Arm" version="118">
+<AssemblyFile name="Hexa_with_Arm.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Hexa_with_Servo-1" uid="Hexa_with_Servo-1" grounded="true" entityUid="Hexa_with_Servo" rigid="true">
+<Transform>
+<Rotation>-1 0 6.9829626776862667e-15 6.9829626776862667e-15 -1.04744440165294e-14 1 0 1 1.04744440165294e-14</Rotation>
+<Translation>0 -2.5917397479348862e-15 0.24999999999999772</Translation>
+</Transform>
+<Instance name="Base_20deg_6Compensation_Motor2_4_6_V2-3" uid="Base_20deg_6Compensation_Motor2_4_6_V2-3" entityUid="Base_20deg_6Compensation_Motor2_4_6_V2*:*Default">
+<Transform>
+<Rotation>0.86602540378443149 -1.4360885886065599e-15 0.50000000000001221 1.4415552085367275e-15 1 3.7533031411197422e-16 -0.50000000000001221 3.9573201743702272e-16 0.86602540378443149</Rotation>
+<Translation>-0.1344124854517256 0.01525551373222489 -0.23280925397400232</Translation>
+</Transform>
+</Instance>
+<Instance name="Base_20deg_6Compensation_Motor1_3_5_V2-2" uid="Base_20deg_6Compensation_Motor1_3_5_V2-2" entityUid="Base_20deg_6Compensation_Motor1_3_5_V2*:*Default">
+<Transform>
+<Rotation>-0.8660254037844316 -1.850288381371302e-15 0.50000000000001221 2.1821940413523089e-15 1 7.4802477143386478e-15 -0.50000000000001221 7.5691815678938804e-15 -0.8660254037844316</Rotation>
+<Translation>0.1344124854517259 0.015255513732225057 -0.23280925397400207</Translation>
+</Transform>
+</Instance>
+<Instance name="NAVIO2-1" uid="NAVIO2-1" grounded="true" entityUid="NAVIO2*:*Predeterminado">
+<Transform>
+<Rotation>6.5287597650251142e-16 0 1 0 1 0 -1 0 6.5287597650251142e-16</Rotation>
+<Translation>4.0470713857819676e-05 0.048904337525683128 0.00021931809316128305</Translation>
+</Transform>
+</Instance>
+<Instance name="CaseT-1" uid="CaseT-1" grounded="true" entityUid="CaseT*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1.04744440165294e-14 1 0 -1 1.04744440165294e-14</Rotation>
+<Translation>-0.03099999333571573 0.031154337637441298 0.055000051212045459</Translation>
+</Transform>
+</Instance>
+<Instance name="Arm-1" uid="Arm-1" grounded="true" entityUid="Arm*:*Predeterminado">
+<Transform>
+<Rotation>-0.5 0 0.86602540378443871 0 1 0 -0.86602540378443871 0 -0.5</Rotation>
+<Translation>0.046725000000000003 0 0.080930073983655801</Translation>
+</Transform>
+</Instance>
+<Instance name="Rubber_V2-1" uid="Rubber_V2-1" grounded="true" entityUid="Rubber_V2*:*Default">
+<Transform>
+<Rotation>-2.2204460492503131e-16 0.70710679112956498 -0.70710677124353005 -1.3877787807814457e-16 -0.70710677124352994 -0.70710679112956487 -0.99999999999999989 -1.6653345369377506e-16 3.3065873977894378e-16</Rotation>
+<Translation>-0.041353545792036407 0.015924367060850098 -0.00014846652900034555</Translation>
+</Transform>
+</Instance>
+<Instance name="Top_Plate_S550-1" uid="Top_Plate_S550-1" grounded="true" entityUid="Top_Plate_S550*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Bottom_Plate_S550-1" uid="Bottom_Plate_S550-1" grounded="true" entityUid="Bottom_Plate_S550*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>6.7983947443657627e-09 -0.020049999999999957 6.7983927585720572e-09</Translation>
+</Transform>
+</Instance>
+<Instance name="Arm-3" uid="Arm-3" grounded="true" entityUid="Arm*:*Predeterminado">
+<Transform>
+<Rotation>0.49999999999999872 0 -0.86602540378443948 0 1 0 0.86602540378443948 0 0.49999999999999872</Rotation>
+<Translation>-0.046724999999999961 0 -0.080930073983655829</Translation>
+</Transform>
+</Instance>
+<Instance name="Arm-4" uid="Arm-4" grounded="true" entityUid="Arm*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.093449999999999991 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Arm-5" uid="Arm-5" grounded="true" entityUid="Arm*:*Predeterminado">
+<Transform>
+<Rotation>-1 0 3.7007434154171832e-16 0 1 0 -3.7007434154171832e-16 0 -1</Rotation>
+<Translation>0.093449999999999991 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Base_20deg_6Compensation_Motor2_4_6_V2-1" uid="Base_20deg_6Compensation_Motor2_4_6_V2-1" entityUid="Base_20deg_6Compensation_Motor2_4_6_V2*:*Default">
+<Transform>
+<Rotation>-8.4099394115355608e-15 5.4166740537375802e-16 -1 -1.3444106938820255e-15 1.0000000000000002 5.6584511382018476e-16 1 1.3444106938820255e-15 -8.3821838359199319e-15</Rotation>
+<Translation>0.26882497090345203 0.01525551373222489 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Arm-6" uid="Arm-6" grounded="true" entityUid="Arm*:*Predeterminado">
+<Transform>
+<Rotation>-0.50000000000000067 0 -0.86602540378443826 0 1 0 0.86602540378443826 0 -0.50000000000000067</Rotation>
+<Translation>0.046725000000000017 0 -0.080930073983655815</Translation>
+</Transform>
+</Instance>
+<Instance name="Arm-2" uid="Arm-2" grounded="true" entityUid="Arm*:*Predeterminado">
+<Transform>
+<Rotation>0.50000000000000067 0 0.86602540378443826 0 1 0 -0.86602540378443826 0 0.50000000000000067</Rotation>
+<Translation>-0.046725000000000017 0 0.080930073983655815</Translation>
+</Transform>
+</Instance>
+<Instance name="Base_20deg_6Compensation_Motor1_3_5_V2-1" uid="Base_20deg_6Compensation_Motor1_3_5_V2-1" entityUid="Base_20deg_6Compensation_Motor1_3_5_V2*:*Default">
+<Transform>
+<Rotation>0.86602540378444415 -5.1232889458630019e-15 0.4999999999999904 1.3561200773448689e-15 1 7.8999307095983827e-15 -0.49999999999999045 -6.1643398718835872e-15 0.86602540378444415</Rotation>
+<Translation>0.13441248545172624 0.015255513732225057 0.23280925397400176</Translation>
+</Transform>
+</Instance>
+<Instance name="Base_20deg_6Compensation_Motor1_3_5_V2-3" uid="Base_20deg_6Compensation_Motor1_3_5_V2-3" entityUid="Base_20deg_6Compensation_Motor1_3_5_V2*:*Default">
+<Transform>
+<Rotation>1.9077621427054936e-14 8.0599115164121921e-15 -1 -1.9754163582685891e-15 1.0000000000000002 8.079817637705617e-15 1.0000000000000002 1.9721637517511326e-15 1.9047263766225342e-14</Rotation>
+<Translation>-0.26882497090345203 0.015255513732225057 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Base1-1" uid="Base1-1" grounded="true" entityUid="Base1*:*Predeterminado">
+<Transform>
+<Rotation>0.99999999999995259 -3.0815322869700454e-07 0 0 0 1 -3.0815322869700454e-07 -0.99999999999995259 0</Rotation>
+<Translation>-0.031740291420590962 0.0015499999999999958 0.049251068198919397</Translation>
+</Transform>
+</Instance>
+<Instance name="Base2-1" uid="Base2-1" grounded="true" entityUid="Base2*:*Predeterminado">
+<Transform>
+<Rotation>1 2.2204460492503131e-16 0 0 0 -0.99999999999999967 -2.2204460492503131e-16 1 0</Rotation>
+<Translation>-0.031740304152741303 0.031154337637441853 -0.049016810674482381</Translation>
+</Transform>
+</Instance>
+<Instance name="CaseB-1" uid="CaseB-1" grounded="true" entityUid="CaseB*:*Predeterminado">
+<Transform>
+<Rotation>1.0000000000000002 4.4408920985006262e-16 0 0 0 1 4.4408920985006262e-16 -1.0000000000000002 0</Rotation>
+<Translation>-0.030999993335715743 0.031154337637441853 0.055000051212045105</Translation>
+</Transform>
+</Instance>
+<Instance name="Raspberry Pi 4 Model B-1" uid="Raspberry Pi 4 Model B-1" grounded="true" entityUid="Raspberry Pi 4 Model B*:*Predeterminado">
+<Transform>
+<Rotation>-6.6613381477509392e-16 0 -1 0 1 0 1 0 -6.6613381477509392e-16</Rotation>
+<Translation>6.7983947283030476e-09 0.036954337525683167 0.010000006798392743</Translation>
+</Transform>
+</Instance>
+<Instance name="Base_20deg_6Compensation_Motor2_4_6_V2-2" uid="Base_20deg_6Compensation_Motor2_4_6_V2-2" entityUid="Base_20deg_6Compensation_Motor2_4_6_V2*:*Default">
+<Transform>
+<Rotation>-0.86602540378444826 1.5076547989557228e-15 0.4999999999999834 1.9570933415535829e-15 1 3.7447550481416068e-16 -0.4999999999999834 1.3028519710408269e-15 -0.86602540378444826</Rotation>
+<Translation>-0.1344124854517259 0.015255513732224946 0.23280925397400212</Translation>
+</Transform>
+</Instance>
+<Instance name="A2212Motor_4-6" uid="A2212Motor_4-6" entityUid="A2212Motor*:*Default">
+<Transform>
+<Rotation>-0.5000000000000131 0.29619813272602036 -0.81379768134936692 -7.0776717819853729e-15 0.93969262078590743 0.34202014332567154 0.86602540378443105 0.17101007166284607 -0.46984631039296393</Rotation>
+<Translation>0.13381499524865656 0.026624992831883632 -0.23177437058526129</Translation>
+</Transform>
+</Instance>
+<Instance name="A2212Motor_5-7" uid="A2212Motor_5-7" entityUid="A2212Motor*:*Default">
+<Transform>
+<Rotation>0.50000000000001288 -0.2961981327260233 -0.81379768134936592 7.7021722333370235e-16 0.93969262078590765 -0.34202014332567077 0.86602540378443116 0.17101007166283919 0.46984631039296632</Rotation>
+<Translation>-0.13381499524865628 0.026624992831883521 -0.23177437058526149</Translation>
+</Transform>
+</Instance>
+<Instance name="APC 8X3.8 Slow Flyer-2" uid="APC 8X3.8 Slow Flyer-2" entityUid="APC 8X3.8 Slow Flyer*:*Valor predeterminado">
+<Transform>
+<Rotation>0.95500767172313361 -0.29619813272602319 0.015066954555467395 0.2941999986104657 0.93969262078590765 -0.17442516807535041 0.037506103070852233 0.17101007166283916 0.98455515214857781</Rotation>
+<Translation>-0.14129938515748214 0.050369322020188234 -0.22745325605668065</Translation>
+</Transform>
+</Instance>
+<Instance name="Rubber_V2-2" uid="Rubber_V2-2" grounded="true" entityUid="Rubber_V2*:*Default">
+<Transform>
+<Rotation>0.99999999999998979 1.4078144683358315e-07 3.1723314426117023e-08 -7.7115760707603003e-08 0.70710687242311376 -0.70710668994996539 -1.2197927652360859e-07 0.70710668994995562 0.70710687242311732</Rotation>
+<Translation>1.8842423534074579e-08 0.015921350708090698 0.041202051987432799</Translation>
+</Transform>
+</Instance>
+<Instance name="A2212Motor_3-5" uid="A2212Motor_3-5" entityUid="A2212Motor*:*Default">
+<Transform>
+<Rotation>1 3.3853695466435583e-15 6.0004054541887891e-16 -3.3864327349596655e-15 0.93969262078590865 0.34202014332566816 5.9401090485090785e-16 -0.34202014332566816 0.93969262078590865</Rotation>
+<Translation>0.26762999049731323 0.026624992831883132 -1.2585911654145882e-15</Translation>
+</Transform>
+</Instance>
+<Instance name="A2212Motor_2-6" uid="A2212Motor_2-6" entityUid="A2212Motor*:*Default">
+<Transform>
+<Rotation>-0.4999999999999899 -0.29619813272603124 0.81379768134937713 -7.6605388699135786e-15 0.93969262078590765 0.34202014332567049 -0.86602540378444448 0.17101007166282547 -0.4698463103929465</Rotation>
+<Translation>0.13381499524865681 0.026624992831883521 0.2317743705852611</Translation>
+</Transform>
+</Instance>
+<Instance name="Rubber_V2-4" uid="Rubber_V2-4" grounded="true" entityUid="Rubber_V2*:*Default">
+<Transform>
+<Rotation>-0.35118382784342866 0.61373364560040755 0.70710743972841228 -0.35118527924903015 0.61373433255641874 -0.70710612264377104 -0.86795093104392584 -0.49664995852165372 6.4952860948097591e-07</Rotation>
+<Translation>0.041353552230035832 0.015924367613955936 -0.00014850128506337906</Translation>
+</Transform>
+</Instance>
+<Instance name="A2212Motor_6-4" uid="A2212Motor_6-4" entityUid="A2212Motor*:*Default">
+<Transform>
+<Rotation>1 1.0489085613657062e-15 2.0797917868001643e-16 -1.0567847034954114e-15 0.93969262078590887 0.34202014332566766 1.6331135701109242e-16 -0.34202014332566766 0.93969262078590887</Rotation>
+<Translation>-0.26762999049731362 0.026624992831881522 -5.387260880055235e-15</Translation>
+</Transform>
+</Instance>
+<Instance name="A2212Motor_1-5" uid="A2212Motor_1-5" entityUid="A2212Motor*:*Default">
+<Transform>
+<Rotation>0.49999999999998329 0.29619813272602885 0.81379768134938224 6.5746019739520989e-16 0.93969262078590765 -0.34202014332567104 -0.86602540378444826 0.17101007166283036 0.46984631039293789</Rotation>
+<Translation>-0.13381499524865653 0.026624992831883465 0.23177437058526143</Translation>
+</Transform>
+</Instance>
+<Instance name="APC 8X3.8 Slow Flyer-1" uid="APC 8X3.8 Slow Flyer-1" entityUid="APC 8X3.8 Slow Flyer*:*Valor predeterminado">
+<Transform>
+<Rotation>0.26242095149240102 7.0569867424834488e-16 -0.96495349329271984 0.33003353207857949 0.93969262078590887 0.089753251441089713 0.90675967704875382 -0.34202014332566766 0.24659503165702595</Rotation>
+<Translation>-0.26762999049731317 0.050369322020188401 -0.0086422290571608034</Translation>
+</Transform>
+</Instance>
+<Instance name="Rubber_V2-3" uid="Rubber_V2-3" grounded="true" entityUid="Rubber_V2*:*Default">
+<Transform>
+<Rotation>-0.96671723487084948 -0.25584719619713392 -1.3129869839284547e-06 0.18090976548716131 -0.68357019063570945 0.70710922156738998 -0.18091280926191755 0.68357443389313877 0.70710434079606377</Rotation>
+<Translation>-1.6104981977459783e-08 0.015924388517136179 -0.041502051234639313</Translation>
+</Transform>
+</Instance>
+<Instance name="APC 8X3.8 Slow Flyer-4" uid="APC 8X3.8 Slow Flyer-4" entityUid="APC 8X3.8 Slow Flyer*:*Valor predeterminado">
+<Transform>
+<Rotation>0.30483654844939329 3.1159722221702944e-15 -0.9524046822278126 0.32574158591959274 0.93969262078590865 0.10426023999156619 0.89496765189142413 -0.34202014332566794 0.28645265512374002</Rotation>
+<Translation>0.26762999049731334 0.05036932202018829 -0.0086422290571612475</Translation>
+</Transform>
+</Instance>
+<Instance name="Servo1^Hexa_with_Servo-1" uid="Servo1^Hexa_with_Servo-1" entityUid="Servo1^Hexa_with_Servo" rigid="true">
+<Transform>
+<Rotation>-1 0 6.9829626776862667e-15 0 1 0 -6.9829626776862667e-15 0 -1</Rotation>
+<Translation>1.3596789472103364e-08 -0.0050000000000000044 1.3596785516933933e-08</Translation>
+</Transform>
+<Instance name="Servo RDS3225-1" uid="Servo RDS3225-1" entityUid="Servo RDS3225*:*Default">
+<Transform>
+<Rotation>0 1.0207112932647533e-14 -1 -1 -3.4914813388431491e-15 0 -3.4914813388431491e-15 1 1.0207112932647533e-14</Rotation>
+<Translation>6.7983939601966312e-09 -0.078499999999999959 -0.0099999932016091309</Translation>
+</Transform>
+</Instance>
+<Instance name="Soporte U corto-1" uid="Soporte U corto-1" entityUid="Soporte U corto*:*Default">
+<Transform>
+<Rotation>0 1.0332013022917863e-14 -0.99999999999999989 -1 1.0481199241851883e-14 0 1.0481199241851886e-14 0.99999999999999989 1.0332013022917863e-14</Rotation>
+<Translation>6.7983946423766381e-09 -0.07850000000000007 -0.0099999932016064143</Translation>
+</Transform>
+</Instance>
+<Instance name="Base Plate-1" uid="Base Plate-1" entityUid="Base Plate*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>6.7983947438579606e-09 -0.051599999999999951 6.7983927584669432e-09</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="Turnigy 5000mAh 3S-2" uid="Turnigy 5000mAh 3S-2" entityUid="Turnigy 5000mAh 3S*:*Predeterminado">
+<Transform>
+<Rotation>0 -1 0 1 0 0 0 0 1</Rotation>
+<Translation>0.0006000067983947515 -0.033549999999999941 0.00058752067700307265</Translation>
+</Transform>
+</Instance>
+<Instance name="Landing_support-1" uid="Landing_support-1" entityUid="Landing_support*:*Default">
+<Transform>
+<Rotation>0 0 1 0 1 0 -1 0 0</Rotation>
+<Translation>-0.064999993201605252 -0.02404999999999996 6.7983927515280493e-09</Translation>
+</Transform>
+</Instance>
+<Instance name="APC 8X3.8 Slow Flyer-3" uid="APC 8X3.8 Slow Flyer-3" entityUid="APC 8X3.8 Slow Flyer*:*Valor predeterminado">
+<Transform>
+<Rotation>0.94465349111252495 0.29619813272602036 -0.14105476914495974 -0.31465810912421355 0.93969262078590743 -0.13404496560067991 0.092844257179933318 0.17101007166284596 0.98088505916777768</Rotation>
+<Translation>0.141299385157482 0.050369322020188345 -0.2274532560566804</Translation>
+</Transform>
+</Instance>
+<Instance name="APC 8X3.8 Slow Flyer-5" uid="APC 8X3.8 Slow Flyer-5" entityUid="APC 8X3.8 Slow Flyer*:*Valor predeterminado">
+<Transform>
+<Rotation>0.95359641239648918 -0.29619813272603124 0.054042098720880519 0.30107555296646665 0.93969262078590765 -0.1622691894552033 -0.0027191304641971505 0.17101007166282556 0.98526552853502081</Rotation>
+<Translation>0.12633060533983112 0.050369322020188234 0.23609548511384143</Translation>
+</Transform>
+</Instance>
+<Instance name="APC 8X3.8 Slow Flyer-6" uid="APC 8X3.8 Slow Flyer-6" entityUid="APC 8X3.8 Slow Flyer*:*Valor predeterminado">
+<Transform>
+<Rotation>0.94897560272225456 0.2961981327260288 0.10822186289076499 -0.26924833975865781 0.93969262078590754 -0.21091019410573542 -0.1641664916331593 0.17101007166283033 0.9714962266600593</Rotation>
+<Translation>-0.12633060533983087 0.050369322020188179 0.2360954851138419</Translation>
+</Transform>
+</Instance>
+<Instance name="Landing_support-2" uid="Landing_support-2" entityUid="Landing_support*:*Default">
+<Transform>
+<Rotation>0 0 -1 0 1 0 1 0 0</Rotation>
+<Translation>0.065000006798394738 -0.02404999999999996 6.7983927515280493e-09</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="Link 1-2" uid="Link 1-2" entityUid="Link 1" rigid="true">
+<Transform>
+<Rotation>-1.7457406694215667e-14 1.04744440165294e-14 -1 -1 0 1.7457406694215667e-14 0 1 1.04744440165294e-14</Rotation>
+<Translation>-0.0079740531636843873 0.00051194609884714552 0.18283547935314137</Translation>
+</Transform>
+<Instance name="Rueda arriba-1" uid="Rueda arriba-1" entityUid="Rueda arriba*:*Default">
+<Transform>
+<Rotation>0.99983390925628801 -0.018225089884239227 -2.3923054372968431e-16 0.018225089884239227 0.99983390925628801 8.7972710054532093e-16 2.2315770426972137e-16 -8.8394098417945661e-16 0.99999999999999978</Rotation>
+<Translation>-0.010295475409006426 -0.037534139360665186 -0.0079740463652910841</Translation>
+</Transform>
+</Instance>
+<Instance name="Soporte U mediano-1" uid="Soporte U mediano-1" entityUid="Soporte U mediano*:*Default">
+<Transform>
+<Rotation>0.01032858929062336 0.9999466586989858 1.9363224343301934e-15 -0.9999466586989858 0.01032858929062336 7.0045278104621327e-15 6.9841547006773164e-15 -2.0085660393013751e-15 1</Rotation>
+<Translation>-0.0086351476185946244 -0.12243495028303474 -0.0069240463652903844</Translation>
+</Transform>
+</Instance>
+<Instance name="Soporte U corto-1" uid="Soporte U corto-1" entityUid="Soporte U corto*:*Default">
+<Transform>
+<Rotation>0.010328589290623358 0.9999466586989858 0 -0.9999466586989858 0.010328589290623358 6.9932405486800802e-15 6.9936439281365692e-15 0 1</Rotation>
+<Translation>-0.0079659429165324248 -0.1872229854138468 -0.007624046365289956</Translation>
+</Transform>
+</Instance>
+<Instance name="Soporte U largo-1" uid="Soporte U largo-1" entityUid="Soporte U largo*:*Défaut">
+<Transform>
+<Rotation>0.99995847480944555 -0.0091131035749394962 0 0.0091131035749394962 0.99995847480944555 0 0 0 1.0000000000000002</Rotation>
+<Translation>0.00096759447919837565 -0.077333403093615846 0.018875953634709279</Translation>
+</Transform>
+</Instance>
+<Instance name="Soporte U largo-2" uid="Soporte U largo-2" entityUid="Soporte U largo*:*Défaut">
+<Transform>
+<Rotation>-0.99995847480944555 0.0091131035749394945 -1.3035001982249611e-15 -0.0091131035749394945 -0.99995847480944555 6.9710632280730324e-15 -1.2399180489059598e-15 6.9826526856604962e-15 1.0000000000000002</Rotation>
+<Translation>0.0010222731006480149 -0.083333153942472496 0.0188759536347093</Translation>
+</Transform>
+</Instance>
+<Instance name="Rueda abajo-1" uid="Rueda abajo-1" entityUid="Rueda abajo*:*Default">
+<Transform>
+<Rotation>0.99999999999993505 -3.6047878579166319e-07 -2.2100797719694645e-16 3.6047878579166319e-07 0.99999999999993505 6.8798931912885744e-15 2.2100549714138806e-16 -6.8798932709568142e-15 1.0000000000000002</Rotation>
+<Translation>-0.010488057094760061 -0.037335483318409746 -0.0079740463652910286</Translation>
+</Transform>
+</Instance>
+<Instance name="Servo RDS3225-1" uid="Servo RDS3225-1" entityUid="Servo RDS3225*:*Default">
+<Transform>
+<Rotation>0.010328589290623743 0.99994665869898558 1.2757260975940545e-16 -0.99994665869898558 0.010328589290623743 5.998837418035371e-15 5.9971997871519823e-15 -1.8952533278253911e-16 0.99999999999999967</Rotation>
+<Translation>-0.0079659429165324126 -0.18722298541384683 -0.0076240463652899647</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="Link 2-1" uid="Link 2-1" entityUid="Link 2" rigid="true">
+<Transform>
+<Rotation>-3.4914813388431334e-15 1.04744440165294e-14 -1 -1 0 3.4914813388431334e-15 0 1 1.04744440165294e-14</Rotation>
+<Translation>-0.0079740531636844358 0.00051193575645498376 0.18283547925888996</Translation>
+</Transform>
+<Instance name="Rueda arriba-2" uid="Rueda arriba-2" entityUid="Rueda arriba*:*Default">
+<Transform>
+<Rotation>-0.007040984154922842 0.0035763642330518819 -0.99996881659429915 -0.89155150894188995 0.45285046214445002 0.0078972045052238121 0.45286458400450064 0.89157931142127267 -5.3511276580776638e-15</Rotation>
+<Translation>-0.021621786604304825 -0.29905490310610122 -0.0061674965650012938</Translation>
+</Transform>
+</Instance>
+<Instance name="Rueda abajo-1" uid="Rueda abajo-1" entityUid="Rueda abajo*:*Default">
+<Transform>
+<Rotation>0.99983391654444842 0.018224690049182989 2.5514544010368536e-16 -0.018224690049182989 0.99983391654444842 1.2997674833846516e-14 0 -1.3000166081659337e-14 1</Rotation>
+<Translation>-0.0090332921722207516 -0.20791698024728167 -0.0076240463652925651</Translation>
+</Transform>
+</Instance>
+<Instance name="Gripper-1" uid="Gripper-1" entityUid="Gripper" rigid="true">
+<Transform>
+<Rotation>-3.3947172430348629e-15 -0.99996881659429904 -0.0078972045052265599 1.442540985287541e-14 0.0078972045052265599 -0.99996881659429904 1 -3.5085317958695901e-15 1.4398151243161899e-14</Rotation>
+<Translation>0.076211520422732146 -0.30788635082193072 0.068620149936154826</Translation>
+</Transform>
+<Instance name="[Fix 1] 1.Ref - Capit 5-2" uid="[Fix 1] 1.Ref - Capit 5-2" entityUid="[Fix 1] 1.Ref - Capit 5*:*Default">
+<Transform>
+<Rotation>0 0 -1 0 -1.0000000000000002 0 -1.0000000000000002 0 0</Rotation>
+<Translation>-0.076894196300118761 0.07375000000002141 -0.028287422378684826</Translation>
+</Transform>
+</Instance>
+<Instance name="[Fix 1] 1.Ref - Capit 1-1" uid="[Fix 1] 1.Ref - Capit 1-1" entityUid="[Fix 1] 1.Ref - Capit 1*:*Default">
+<Transform>
+<Rotation>-0.40959040272234182 0.91226953363452279 3.777019419573646e-15 1.2091022627558343e-15 -3.5973828083069029e-15 0.99999999999999989 0.9122695336345229 0.40959040272234182 3.7042631584014205e-16</Rotation>
+<Translation>-0.047552564890836466 0.070750000000021865 0.024082651520352799</Translation>
+</Transform>
+</Instance>
+<Instance name="[Fix 1] 1.Ref - Capit 3-1" uid="[Fix 1] 1.Ref - Capit 3-1" entityUid="[Fix 1] 1.Ref - Capit 3*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.060894196300118747 0.07375000000002141 -0.0027874223786847896</Translation>
+</Transform>
+</Instance>
+<Instance name="[Fix 1] 1.Ref - Capit 4-1" uid="[Fix 1] 1.Ref - Capit 4-1" entityUid="[Fix 1] 1.Ref - Capit 4*:*Default">
+<Transform>
+<Rotation>1.5586356611109438e-15 0.8872623866842998 -0.46126506173270915 -1 3.328925746213589e-15 3.0242805217658164e-15 4.2188474935755941e-15 0.46126506173270915 0.8872623866842998</Rotation>
+<Translation>-0.092894196300106882 0.07075000000002217 -0.0027874223786832908</Translation>
+</Transform>
+</Instance>
+<Instance name="[Fix 1] 1.Ref - Capit 4-2" uid="[Fix 1] 1.Ref - Capit 4-2" entityUid="[Fix 1] 1.Ref - Capit 4*:*Default">
+<Transform>
+<Rotation>-2.7324525905965926e-15 -0.89566912996748727 0.44472104697583681 1 -3.8167292062957507e-15 -1.5427062460686668e-15 3.0791341698588318e-15 0.44472104697583681 0.89566912996748727</Rotation>
+<Translation>-0.060894196300124839 0.067750000000022265 -0.0027874223786751168</Translation>
+</Transform>
+</Instance>
+<Instance name="[Fix 1] 1.Ref - Capit 2-1" uid="[Fix 1] 1.Ref - Capit 2-1" entityUid="[Fix 1] 1.Ref - Capit 2*:*Default">
+<Transform>
+<Rotation>0.46126506188322236 0.88726238660605183 1.9844850578125153e-15 -1.3019099687205935e-15 2.9134680779030467e-15 -1 -0.88726238660605183 0.46126506188322236 2.4990167792419858e-15</Rotation>
+<Translation>-0.095732148156596891 0.078250000000021983 0.048330449219495364</Translation>
+</Transform>
+</Instance>
+<Instance name="[Fix 1] 1.Ref - Capit 2-3" uid="[Fix 1] 1.Ref - Capit 2-3" entityUid="[Fix 1] 1.Ref - Capit 2*:*Default">
+<Transform>
+<Rotation>0.44472104713011407 -0.89566912989088487 1.8340298434007371e-15 -4.066191827689635e-15 -4.0666255085586285e-15 -1 0.89566912989088487 0.44472104713011401 -5.4504764507284287e-15</Rotation>
+<Translation>-0.071894196300118313 0.078250000000022302 0.02171257762132961</Translation>
+</Transform>
+</Instance>
+<Instance name="[Fix 1] 1.Ref - Capit 2-4" uid="[Fix 1] 1.Ref - Capit 2-4" entityUid="[Fix 1] 1.Ref - Capit 2*:*Default">
+<Transform>
+<Rotation>-0.44472104713012744 0.89566912989087821 2.0538614235629853e-15 1.5638532135930912e-15 3.0695931907409598e-15 -0.99999999999999989 -0.89566912989087821 -0.4447210471301275 -2.7658077451458062e-15</Rotation>
+<Translation>-0.058552564886213423 0.069250000000022086 0.048582651518057796</Translation>
+</Transform>
+</Instance>
+<Instance name="[Fix 1] 1.Ref - Capit 1-2" uid="[Fix 1] 1.Ref - Capit 1-2" entityUid="[Fix 1] 1.Ref - Capit 1*:*Default">
+<Transform>
+<Rotation>-0.40959040272233999 0.91226953363452368 5.4579788073162319e-15 1.8995222061946034e-15 -5.1300109993324128e-15 1 0.91226953363452368 0.40959040272233993 3.6832703401302452e-16</Rotation>
+<Translation>-0.047552564890837049 0.073750000000021576 0.024082651520352466</Translation>
+</Transform>
+</Instance>
+<Instance name="[Fix 1] 1.Ref - Capit 1-3" uid="[Fix 1] 1.Ref - Capit 1-3" entityUid="[Fix 1] 1.Ref - Capit 1*:*Default">
+<Transform>
+<Rotation>0.40959040272661384 -0.91226953363260488 -6.6924936615240045e-15 -2.7720881146109369e-15 6.0914814858925589e-15 -1 0.91226953363260477 0.40959040272661384 0</Rotation>
+<Translation>-0.1067321481520922 0.073750000000021979 0.023830449221857175</Translation>
+</Transform>
+</Instance>
+<Instance name="[Fix 1] 1.Ref - Capit 1-4" uid="[Fix 1] 1.Ref - Capit 1-4" entityUid="[Fix 1] 1.Ref - Capit 1*:*Default">
+<Transform>
+<Rotation>0.40959040272661396 -0.91226953363260477 -4.4483777562927651e-15 -1.8388068845354151e-15 4.0505793164058438e-15 -1 0.91226953363260477 0.40959040272661396 0</Rotation>
+<Translation>-0.10673214815209223 0.076750000000022037 0.023830449221857536</Translation>
+</Transform>
+</Instance>
+<Instance name="[Fix 1] 1.Ref - Capit 2-2" uid="[Fix 1] 1.Ref - Capit 2-2" entityUid="[Fix 1] 1.Ref - Capit 2*:*Default">
+<Transform>
+<Rotation>-0.46126506188322808 -0.88726238660604895 2.0413527351298483e-16 3.567458828346303e-15 -2.0847039372551271e-15 -1 0.88726238660604884 -0.46126506188322808 4.1268731247835557e-15</Rotation>
+<Translation>-0.081894196300102029 0.069250000000022113 0.021712577621314288</Translation>
+</Transform>
+</Instance>
+<Instance name="[Fix 1] 1.Ref - Capit 5-1" uid="[Fix 1] 1.Ref - Capit 5-1" entityUid="[Fix 1] 1.Ref - Capit 5*:*Default">
+<Transform>
+<Rotation>1.3877787807814488e-15 0 1 0 1.0000000000000002 0 -1.0000000000000002 0 1.3877787807814457e-15</Rotation>
+<Translation>-0.076894196300118747 0.076750000000021412 -0.028287422378684757</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="Base tubo-1" uid="Base tubo-1" entityUid="Base tubo*:*Default">
+<Transform>
+<Rotation>-0.70708473118891291 -0.0078972045052269277 0.70708473118891857 0.0055841668580720923 -0.99996881659429893 -0.0055841668580537372 0.70710678118655024 1.3009514555709036e-14 0.70710678118654458</Rotation>
+<Translation>0.001934765374734537 -0.22500976534446041 -0.0082740463639691241</Translation>
+</Transform>
+</Instance>
+<Instance name="Rueda arriba-1" uid="Rueda arriba-1" entityUid="Rueda arriba*:*Default">
+<Transform>
+<Rotation>0.99999999999999911 -3.9422688766221916e-08 1.2757257033671557e-16 3.9422688766221916e-08 0.99999999999999911 6.9988374180353684e-15 -1.2757284624970479e-16 -6.9988374130061103e-15 0.99999999999999978</Rotation>
+<Translation>-0.0088443629887606581 -0.20811911310569214 -0.007624046365289871</Translation>
+</Transform>
+</Instance>
+<Instance name="Base tubo-2" uid="Base tubo-2" entityUid="Base tubo*:*Default">
+<Transform>
+<Rotation>0.99996881659429893 0.0078972045052265582 5.2113414174418515e-13 -0.0078972045052265582 0.99996881659429893 8.8951469513470494e-15 -5.2104764421223951e-13 -1.3010372462380448e-14 1</Rotation>
+<Translation>0.0015083163314524319 -0.27900808144055256 -0.0082740463639682984</Translation>
+</Transform>
+</Instance>
+<Instance name="Hitec HS-300-1" uid="Hitec HS-300-1" entityUid="Hitec HS-300*:*Default">
+<Transform>
+<Rotation>-6.2428159317122982e-15 0.99996881659429904 0.0078972045052233576 0 -0.0078972045052233576 0.99996881659429904 1 6.2427069694989351e-15 0</Rotation>
+<Translation>-0.041562793327531551 -0.30416872467386374 0.016550953636029389</Translation>
+</Transform>
+</Instance>
+<Instance name="Soporte U mediano-1" uid="Soporte U mediano-1" entityUid="Soporte U mediano*:*Default">
+<Transform>
+<Rotation>-0.0078972045052269312 0.99996881659429893 3.495039688701289e-15 -0.99996881659429893 -0.0078972045052269312 1.2972087930315489e-14 1.2999284459610327e-14 -3.3924874702152487e-15 1</Rotation>
+<Translation>-0.0077656859349283201 -0.18704048369191406 -0.0075740463652886753</Translation>
+</Transform>
+</Instance>
+<Instance name="Cuerpo Tubo-1" uid="Cuerpo Tubo-1" entityUid="Cuerpo Tubo*:*Default">
+<Transform>
+<Rotation>0.99996881659429893 0.0078972045052266814 0 -0.0078972045052266814 0.99996881659429893 1.3010178326500831e-14 0 -1.3010372462380543e-14 1</Rotation>
+<Translation>0.0015241107404628598 -0.27700814380736394 -0.0082740463639683539</Translation>
+</Transform>
+</Instance>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Hexa_with_Servo-1</Uid>
+<Uid>Servo1^Hexa_with_Servo-1</Uid>
+<Uid>Servo RDS3225-1</Uid>
+</InstancePath>
+<Position>0.01100000000000001 0.0099999999999999985 -0.021749999999999999</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Link 1-2</Uid>
+<Uid>Rueda arriba-1</Uid>
+</InstancePath>
+<Position>0.010991491193246997 0.010000000000000009 -0.023049999999999991</Position>
+<Axis>0 -9.9999999999999889e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Hexa_with_Servo-1</Uid>
+<Uid>Servo1^Hexa_with_Servo-1</Uid>
+<Uid>Servo RDS3225-1</Uid>
+</InstancePath>
+<Position>0.010991491193247993 0.01 -0.02605</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Link 1-2</Uid>
+<Uid>Rueda arriba-1</Uid>
+</InstancePath>
+<Position>0.010991491193246997 0.010000000000000009 -0.026049999999999983</Position>
+<Axis>0 -9.9999999999999889e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Link 1-2</Uid>
+<Uid>Servo RDS3225-1</Uid>
+</InstancePath>
+<Position>0.010999999999999999 0.01 -0.021749999999999985</Position>
+<Axis>0 0 0.99999999999999967</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Link 2-1</Uid>
+<Uid>Rueda arriba-1</Uid>
+</InstancePath>
+<Position>0.010991491193246997 0.0099999999999999967 -0.023049999999999998</Position>
+<Axis>0 -9.9999999999999889e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Link 1-2</Uid>
+<Uid>Servo RDS3225-1</Uid>
+</InstancePath>
+<Position>0.010991491193248 0.01 -0.026049999999999983</Position>
+<Axis>0 0 -0.99999999999999967</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Link 2-1</Uid>
+<Uid>Rueda arriba-1</Uid>
+</InstancePath>
+<Position>0.010991491193246997 0.01 -0.02604999999999999</Position>
+<Axis>0 -9.9999999999999889e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="Hexa_with_Servo" uid="Hexa_with_Servo" version="693">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="Hexa_with_Servo.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="Servo1^Hexa_with_Servo" uid="Servo1^Hexa_with_Servo" version="103">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="Hexa_with_Servo.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="Link 1" uid="Link 1" version="104">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="Link 1.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="Link 2" uid="Link 2" version="104">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="Link 2.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="Gripper" uid="Gripper" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="Gripper.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="A2212Motor" uid="A2212Motor*:*Default" version="190">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="A2212Motor.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.10071465703455626</Mass>
+<CenterOfMass>0 0.012241211550147088 0</CenterOfMass>
+<Inertia>8.734116934160161e-06 8.975643784334388e-06 8.7239374376517467e-06 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="A2212Motor_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58823529411764708" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58823529411764708" a="1"/>
+<Specular r="0.45294117647058824" g="0.43372549019607842" b="0.41176470588235292" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="APC 8X3.8 Slow Flyer" uid="APC 8X3.8 Slow Flyer*:*Valor predeterminado" version="756">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="APC 8X3.8 Slow Flyer.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0060000000000000001</Mass>
+<CenterOfMass>-3.4160090745783899e-07 0.0026365407550134209 -6.7269916256510371e-07</CenterOfMass>
+<Inertia>1.3921283241828666e-05 1.4138630072581493e-05 2.667212577382475e-07 2.3841324404415817e-11 -1.2421975935850196e-06 1.229161102533643e-11</Inertia>
+</MassProperties>
+<GeometryFile name="APC 8X3.8 Slow Flyer_Valor predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.37647058823529411" g="0.37647058823529411" b="0.37647058823529411" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.20000000298023224</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Arm" uid="Arm*:*Predeterminado" version="137">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Arm.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.043000000000000003</Mass>
+<CenterOfMass>-0.069585490592481342 0.0020654904994989415 1.7571789135978086e-08</CenterOfMass>
+<Inertia>6.7623012133841859e-06 0.00016046986264346252 0.00015902310396815659 -5.7038244421677864e-10 5.442787857113083e-09 1.8581745108255349e-05</Inertia>
+</MassProperties>
+<GeometryFile name="Arm_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Base Plate" uid="Base Plate*:*Predeterminado" version="129">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Base Plate.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.027</Mass>
+<CenterOfMass>5.7818357759413915e-07 0.00077500000000000312 0</CenterOfMass>
+<Inertia>2.5687282760447875e-05 4.2426640763645577e-05 1.675016925319769e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Base Plate_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0.37450980392156863" g="0.37450980392156863" b="0.37450980392156863" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Base tubo" uid="Base tubo*:*Default" version="158">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Base tubo.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0030000000000000001</Mass>
+<CenterOfMass>0 0.0025337423312883438 0</CenterOfMass>
+<Inertia>8.4587458601279912e-08 1.1380444785858745e-07 8.4587458601279912e-08 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Base tubo_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89411764705882346" g="0.9137254901960784" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89411764705882346" g="0.9137254901960784" b="0.92941176470588238" a="1"/>
+<Specular r="0.44705882352941173" g="0.4568627450980392" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Base1" uid="Base1*:*Predeterminado" version="595">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Base1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.029000000000000001</Mass>
+<CenterOfMass>0.031343289858348562 0.049441505771180928 0.0023453546631164988</CenterOfMass>
+<Inertia>3.0993403272487255e-05 3.1380614864214205e-05 6.1805395396262737e-05 -1.4933559968425212e-09 -1.5490108752164069e-08 -5.8878168689184578e-10</Inertia>
+</MassProperties>
+<GeometryFile name="Base1_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Base2" uid="Base2*:*Predeterminado" version="252">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Base2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.011074508265514087</Mass>
+<CenterOfMass>0.031725682186273266 0.049004853850068281 0.0039518783046464858</CenterOfMass>
+<Inertia>6.3466539536174369e-06 5.9397722951617412e-06 1.1896800684546142e-05 -3.9113785479995921e-10 -4.7830752417761167e-10 1.9228702640449873e-10</Inertia>
+</MassProperties>
+<GeometryFile name="Base2_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Base_20deg_6Compensation_Motor1_3_5_V2" uid="Base_20deg_6Compensation_Motor1_3_5_V2*:*Default" version="349">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Base_20deg_6Compensation_Motor1_3_5_V2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0089457632432774561</Mass>
+<CenterOfMass>0.0031227706791105057 0.0071538841737207731 -0.00060265911339028866</CenterOfMass>
+<Inertia>8.7895394288954804e-07 1.4406346815265165e-06 8.0226202465634277e-07 -4.9389742540304289e-08 -3.8522590452423579e-08 -1.2895825519564567e-07</Inertia>
+</MassProperties>
+<GeometryFile name="Base_20deg_6Compensation_Motor1_3_5_V2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Diffuse r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Specular r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Base_20deg_6Compensation_Motor2_4_6_V2" uid="Base_20deg_6Compensation_Motor2_4_6_V2*:*Default" version="287">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Base_20deg_6Compensation_Motor2_4_6_V2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0089567114255241879</Mass>
+<CenterOfMass>0.0031304402737284439 0.0071391692368880369 0.00068940060413162727</CenterOfMass>
+<Inertia>8.8122227126108989e-07 1.4399227135982525e-06 7.9524844908286832e-07 4.2898919440016275e-08 1.5638054438610867e-08 -1.255948462703374e-07</Inertia>
+</MassProperties>
+<GeometryFile name="Base_20deg_6Compensation_Motor2_4_6_V2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Diffuse r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Specular r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Bottom_Plate_S550" uid="Bottom_Plate_S550*:*Predeterminado" version="110">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Bottom_Plate_S550.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.067000000000000004</Mass>
+<CenterOfMass>4.0643895993856339e-07 0.00077500000000000019 9.7379180261003719e-08</CenterOfMass>
+<Inertia>0.00013516439817207811 0.00026557568819825402 0.00013043811794284264 0 4.1633802749303579e-10 0</Inertia>
+</MassProperties>
+<GeometryFile name="Bottom_Plate_S550_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0.37450980392156863" g="0.37450980392156863" b="0.37450980392156863" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="CaseB" uid="CaseB*:*Predeterminado" version="1826">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="CaseB.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.017838822710198658</Mass>
+<CenterOfMass>0.031588557938848565 0.046689901089352281 0.0026985350650363541</CenterOfMass>
+<Inertia>1.5021623735830979e-05 8.0905635078301846e-06 2.2756140814238535e-05 -3.7570079618541804e-07 -5.6470668228896125e-08 -1.0736915430772089e-07</Inertia>
+</MassProperties>
+<GeometryFile name="CaseB_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Diffuse r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Specular r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="CaseT" uid="CaseT*:*Predeterminado" version="5166">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="CaseT.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.016289521876963309</Mass>
+<CenterOfMass>0.032011305981326905 0.040825447597173818 0.020724029457907626</CenterOfMass>
+<Inertia>1.3302376671541299e-05 8.6678886124673363e-06 2.1203961230882098e-05 -6.1353540357784844e-08 -1.592608988001852e-08 -1.6575740498262403e-07</Inertia>
+</MassProperties>
+<GeometryFile name="CaseT_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Diffuse r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Specular r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Cuerpo Tubo" uid="Cuerpo Tubo*:*Default" version="116">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Cuerpo Tubo.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.012</Mass>
+<CenterOfMass>0 0.025000000000000001 0</CenterOfMass>
+<Inertia>2.6218749999999989e-06 2.4374999999999989e-07 2.6218749999999989e-06 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Cuerpo Tubo_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89411764705882346" g="0.9137254901960784" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89411764705882346" g="0.9137254901960784" b="0.92941176470588238" a="1"/>
+<Specular r="0.44705882352941173" g="0.4568627450980392" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Hitec HS-300" uid="Hitec HS-300*:*Default" version="105">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Hitec HS-300.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.042999999999999997</Mass>
+<CenterOfMass>-0.00019345757818762916 0.020164010298831758 -3.797573929318163e-09</CenterOfMass>
+<Inertia>6.9235584682481101e-06 7.4449632873481731e-06 1.1596052027011748e-05 2.593169662151911e-12 -1.7237190415122154e-12 5.9495608259531834e-08</Inertia>
+</MassProperties>
+<GeometryFile name="Hitec HS-300_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Landing_support" uid="Landing_support*:*Default" version="116">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Landing_support.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.073910957838459274</Mass>
+<CenterOfMass>-4.9212287840188712e-10 -0.17904788481664735 -0.058197348912485465</CenterOfMass>
+<Inertia>0.00039084544193658354 0.0003584143148881546 0.00067104240519194505 -0.00011341228507127045 3.7892099976802969e-11 1.1367365046894813e-10</Inertia>
+</MassProperties>
+<GeometryFile name="Landing_support_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="NAVIO2" uid="NAVIO2*:*Predeterminado" version="1215">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="NAVIO2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0062307563825945381</Mass>
+<CenterOfMass>0.0002188919183965156 0.00015744507594513124 0.002557754618220733</CenterOfMass>
+<Inertia>1.7755493011422147e-06 3.8604910524314564e-06 2.1063645306245137e-06 -1.9917587899616231e-08 1.0334957115718581e-07 -1.0675455832524079e-08</Inertia>
+</MassProperties>
+<GeometryFile name="NAVIO2_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.5" g="0.5" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Raspberry Pi 4 Model B" uid="Raspberry Pi 4 Model B*:*Predeterminado" version="213">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Raspberry Pi 4 Model B.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.029768007806398857</Mass>
+<CenterOfMass>0.0086192763024527958 0.0027095800597721751 -0.00052554181649093685</CenterOfMass>
+<Inertia>8.2654888181955966e-06 2.808813250793317e-05 2.097229434838855e-05 -1.466725140520899e-08 -2.4764738160939589e-07 -1.7236019447244168e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Raspberry Pi 4 Model B_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Rubber_V2" uid="Rubber_V2*:*Default" version="105">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Rubber_V2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0054550469459655974</Mass>
+<CenterOfMass>0 0 0</CenterOfMass>
+<Inertia>2.5406110299622156e-07 2.5406110299622151e-07 3.091270334549784e-07 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Rubber_V2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Rueda abajo" uid="Rueda abajo*:*Default" version="326">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Rueda abajo.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0030000000000000001</Mass>
+<CenterOfMass>0.011000231502709868 0.0099998467114183198 0.024792303739579191</CenterOfMass>
+<Inertia>7.2983858995710564e-08 7.2983356448412804e-08 1.4117529798540106e-07 1.0366738806874876e-12 2.288863941926126e-13 -3.6525516987267876e-13</Inertia>
+</MassProperties>
+<GeometryFile name="Rueda abajo_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Rueda arriba" uid="Rueda arriba*:*Default" version="242">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Rueda arriba.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0030000000000000001</Mass>
+<CenterOfMass>0.010992638247100107 0.010000008248087866 -0.025935661679683898</CenterOfMass>
+<Inertia>7.5102535939763853e-08 7.5102246444363674e-08 1.4561165159313146e-07 6.8086341078382797e-14 -2.5605243056364084e-12 3.5879820519377146e-13</Inertia>
+</MassProperties>
+<GeometryFile name="Rueda arriba_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Servo RDS3225" uid="Servo RDS3225*:*Default" version="276">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Servo RDS3225.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.070999999999999994</Mass>
+<CenterOfMass>0.00030267955792285433 0.0099997103999156026 0.00012294821479054977</CenterOfMass>
+<Inertia>1.2314339121041711e-05 1.9504948984867097e-05 1.1801225931385528e-05 -7.6454140245509588e-11 -6.9779993768056357e-08 2.2095939868369869e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Servo RDS3225_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Soporte U corto" uid="Soporte U corto*:*Default" version="181">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Soporte U corto.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0080000000000000002</Mass>
+<CenterOfMass>-0.018988580316194673 0.0099999347959725086 0.00049664309252629398</CenterOfMass>
+<Inertia>2.8367645778912119e-06 3.1140793874137267e-06 8.3871270223840148e-07 -2.5906503907718901e-13 -6.6257580462523832e-08 4.6887331042766612e-12</Inertia>
+</MassProperties>
+<GeometryFile name="Soporte U corto_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Soporte U largo" uid="Soporte U largo*:*Défaut" version="630">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Soporte U largo.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.023</Mass>
+<CenterOfMass>0 0.019129283264324299 -0.02800000000000016</CenterOfMass>
+<Inertia>2.2857134756984256e-05 1.4682782035153806e-05 1.0629766925672819e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Soporte U largo_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89411764705882346" g="0.9137254901960784" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89411764705882346" g="0.9137254901960784" b="0.92941176470588238" a="1"/>
+<Specular r="0.44705882352941173" g="0.4568627450980392" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Soporte U mediano" uid="Soporte U mediano*:*Default" version="232">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Soporte U mediano.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.010999999999999999</Mass>
+<CenterOfMass>0.027559555692219261 0.009996717664656915 -0.00070002627488609085</CenterOfMass>
+<Inertia>6.3050912904206835e-06 7.2958945614707165e-06 1.735524839530316e-06 4.7115569614255714e-13 -4.3086966782760663e-12 3.3693626158431833e-10</Inertia>
+</MassProperties>
+<GeometryFile name="Soporte U mediano_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Top_Plate_S550" uid="Top_Plate_S550*:*Predeterminado" version="113">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Top_Plate_S550.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.060999999999999999</Mass>
+<CenterOfMass>0 0.00077499999999999997 0.00047700960648411404</CenterOfMass>
+<Inertia>0.00013707770892608249 0.00026921647265503508 0.00013216318914561925 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Top_Plate_S550_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Emissive r="0.22470588235294117" g="0.22470588235294117" b="0.22470588235294117" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Turnigy 5000mAh 3S" uid="Turnigy 5000mAh 3S*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Turnigy 5000mAh 3S.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.35299999999999998</Mass>
+<CenterOfMass>0 0 0</CenterOfMass>
+<Inertia>0.00068911483333333344 0.00063993016666666672 9.207416666666666e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Turnigy 5000mAh 3S_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.039215686274509803" g="0.49019607843137253" b="0.70980392156862748" a="1"/>
+<Diffuse r="0.039215686274509803" g="0.49019607843137253" b="0.70980392156862748" a="1"/>
+<Specular r="0.011764705882352941" g="0.14705882352941174" b="0.21294117647058824" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="[Fix 1] 1.Ref - Capit 1" uid="[Fix 1] 1.Ref - Capit 1*:*Default" version="104">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="[Fix 1] 1.Ref - Capit 1.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0016345575636118209</Mass>
+<CenterOfMass>0.02571701977739338 0.0033579360997379524 0.0014999999999999994</CenterOfMass>
+<Inertia>4.3926261291426668e-08 5.3386849068255908e-07 5.7534291562856796e-07 0 0 -1.1504033651798938e-07</Inertia>
+</MassProperties>
+<GeometryFile name="[Fix 1] 1.Ref - Capit 1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="[Fix 1] 1.Ref - Capit 2" uid="[Fix 1] 1.Ref - Capit 2*:*Default" version="104">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="[Fix 1] 1.Ref - Capit 2.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00039997255977599586</Mass>
+<CenterOfMass>0.014999909176355684 -1.417017742872715e-12 7.1597585997904173e-10</CenterOfMass>
+<Inertia>1.1453714043465347e-09 5.3105999643496617e-08 5.3654215176321354e-08 -1.4469543052828722e-14 -9.1417893692572306e-16 -1.2943831915699473e-15</Inertia>
+</MassProperties>
+<GeometryFile name="[Fix 1] 1.Ref - Capit 2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="[Fix 1] 1.Ref - Capit 3" uid="[Fix 1] 1.Ref - Capit 3*:*Default" version="104">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="[Fix 1] 1.Ref - Capit 3.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0053694368856392989</Mass>
+<CenterOfMass>-0.0070676986926196126 0.0014999999999999996 0.0017069411790362856</CenterOfMass>
+<Inertia>9.7399827780559409e-07 2.9654720934547535e-06 1.9995279709776184e-06 0 7.1981104924860129e-08 0</Inertia>
+</MassProperties>
+<GeometryFile name="[Fix 1] 1.Ref - Capit 3_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="[Fix 1] 1.Ref - Capit 4" uid="[Fix 1] 1.Ref - Capit 4*:*Default" version="104">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="[Fix 1] 1.Ref - Capit 4.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.002035352880811866</Mass>
+<CenterOfMass>0.0015000000000000002 0.000571918971597893 0.0060600809730617967</CenterOfMass>
+<Inertia>3.5884888197960989e-07 2.9431741493264828e-07 6.7584496368179511e-08 7.1676456711732458e-09 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="[Fix 1] 1.Ref - Capit 4_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="[Fix 1] 1.Ref - Capit 5" uid="[Fix 1] 1.Ref - Capit 5*:*Default" version="104">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="[Fix 1] 1.Ref - Capit 5.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00051163216042523758</Mass>
+<CenterOfMass>-0.0032830528329582448 0.0026361172696646772 0</CenterOfMass>
+<Inertia>1.6790732350624992e-08 1.7842134853855859e-08 7.0019318241655714e-09 0 0 -1.9147834300992373e-09</Inertia>
+</MassProperties>
+<GeometryFile name="[Fix 1] 1.Ref - Capit 5_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

@@ -1,0 +1,10 @@
+*.asv
+*.mex
+slprj/
+sccprj/
+*.autosave
+*.slxc
+*.mex*
+*.mp4
+*.avi
+*.svg
