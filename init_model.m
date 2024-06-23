@@ -30,6 +30,9 @@ ASMC = InitController();                    % load controller gains
 open_system("Hexa_ASMC")                    % open Simulink model
 % sim(mdl)                                    % simulate model
 
+%% Bus Definitions
+DD
+
 %%
 
 function Trajectory = InitTrajectoryPoints()
