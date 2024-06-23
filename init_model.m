@@ -3,9 +3,9 @@ clear, clc
 
 % Open 'HexaProject.prj' to add all needed files to MATLAB path
 try
-    proj = currentProject;
+    currentProject;
 catch
-    proj = openProject("HexaProject.prj");
+    openProject("HexaProject.prj");
 end
 
 % Init Arm Model
@@ -16,24 +16,23 @@ run("Hexa_with_Arm_DataFile.m")             % load CAD rigid transform info
 HexaConstants = InitHexaConstants();        % load Hexa's inertia info
 
 % Get Trajectory: Go to InitTrajectoryPoints to set a custom trajectory
-m = 0;                                   % mass of the object
-[Trajectory, PickObj] = InitTrajectoryPoints(m);
+Trajectory = InitTrajectoryPoints();
 tf = 200;                                   % final time of simulation
 
 %% Disturbances
-disturbances = InitEnvironemnt(true);
+m = 0.2;                                    % mass of the object
+Environment = InitEnvironment(false,m);
 
 %% Init Controller and Model
 
-mdl = "Hexa_ASMC";                          % model's name
 ASMC = InitController();                    % load controller gains
 
-open_system(mdl)                            % open Simulink model
+open_system("Hexa_ASMC")                    % open Simulink model
 % sim(mdl)                                    % simulate model
 
 %%
 
-function [Trajectory, PickObj] = InitTrajectoryPoints(m)
+function Trajectory = InitTrajectoryPoints()
 
 xobj = 2;
 yobj = 1;
@@ -73,10 +72,6 @@ TrayPoints(:,4:end) = deg2rad(TrayPoints(:,4:end));
 
 Trajectory = struct('Tstamps', tstamps,...
                     'Waypoints', TrayPoints');
-
-PickObj = struct('Radius', 0.023,...
-                 'Mass', m,...
-                 'Time', [48, 143]);
 
 end
 
@@ -160,26 +155,31 @@ Controller = struct('lambda', lambda ,...
 
 end
 
-function disturbances = InitEnvironemnt(val)
+function Environment = InitEnvironment(val,m)
 if val
-    disturbances.CMforceX  = timeseries( [0 0 2.5   0 0]',[0  49  50  52  300]);
-    disturbances.CMforceY  = timeseries(-[0 0 2.5   0 0]',[0  70  71  73  300]);
-    disturbances.CMforceZ  = timeseries(-[0 0 15    0 0]',[0  25  27  30  300]);
-    disturbances.CMtorqueX = timeseries( [0 0 0.08  0 0]',[0  49  50  52  300]);
-    disturbances.CMtorqueY = timeseries( [0 0 0.08  0 0]',[0  100 101 104 300]);
-    disturbances.CMtorqueZ = timeseries(-[0 0 0.08  0 0]',[0  10  11  14  300]);
-    disturbances.ee_forceX = timeseries( [0 0 0.80  0 0]',[0  5   6   8   300]);
-    disturbances.ee_forceY = timeseries( [0 0 0.80  0 0]',[0  5   6   8   300]);
-    disturbances.ee_forceZ = timeseries(-[0 0 0.80  0 0]',[0  5   6   8   300]);
+    Environment.CMforceX  = timeseries( [0 0 2.5   0 0]',[0  49  50  52  300]);
+    Environment.CMforceY  = timeseries(-[0 0 2.5   0 0]',[0  70  71  73  300]);
+    Environment.CMforceZ  = timeseries(-[0 0 15    0 0]',[0  25  27  30  300]);
+    Environment.CMtorqueX = timeseries( [0 0 0.08  0 0]',[0  49  50  52  300]);
+    Environment.CMtorqueY = timeseries( [0 0 0.08  0 0]',[0  100 101 104 300]);
+    Environment.CMtorqueZ = timeseries(-[0 0 0.08  0 0]',[0  10  11  14  300]);
+    Environment.ee_forceX = timeseries( [0 0 0.80  0 0]',[0  5   6   8   300]);
+    Environment.ee_forceY = timeseries( [0 0 0.80  0 0]',[0  5   6   8   300]);
+    Environment.ee_forceZ = timeseries(-[0 0 0.80  0 0]',[0  5   6   8   300]);
 else
-    disturbances.CMforceX  = timeseries(0,0);
-    disturbances.CMforceY  = timeseries(0,0);
-    disturbances.CMforceZ  = timeseries(0,0);
-    disturbances.CMtorqueX = timeseries(0,0);
-    disturbances.CMtorqueY = timeseries(0,0);
-    disturbances.CMtorqueZ = timeseries(0,0);
-    disturbances.ee_forceX = timeseries(0,0);
-    disturbances.ee_forceY = timeseries(0,0);
-    disturbances.ee_forceZ = timeseries(0,0);
+    Environment.CMforceX  = timeseries(0,0);
+    Environment.CMforceY  = timeseries(0,0);
+    Environment.CMforceZ  = timeseries(0,0);
+    Environment.CMtorqueX = timeseries(0,0);
+    Environment.CMtorqueY = timeseries(0,0);
+    Environment.CMtorqueZ = timeseries(0,0);
+    Environment.ee_forceX = timeseries(0,0);
+    Environment.ee_forceY = timeseries(0,0);
+    Environment.ee_forceZ = timeseries(0,0);
 end
+
+Environment.PickObj = struct('Radius', 0.023,...
+                 'Mass', m,...
+                 'Time', [48, 143]);
+
 end
