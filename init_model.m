@@ -8,6 +8,12 @@ catch
     openProject("HexaProject.prj");
 end
 
+%% Plant
+% Variant: defines if the simulation will run with the Simscape model or
+% the FMU
+% Plant.Variant = 'SimscapeModel';
+Plant.Variant = 'FMU';
+
 % Init Arm Model
 ArmConstants = InitArmConstants();          % load arm's inertia info
 
@@ -15,23 +21,23 @@ ArmConstants = InitArmConstants();          % load arm's inertia info
 run("Hexa_with_Arm_DataFile.m")             % load CAD rigid transform info
 HexaConstants = InitHexaConstants();        % load Hexa's inertia info
 
+%% Trajectory
 % Get Trajectory: Go to InitTrajectoryPoints to set a custom trajectory
 Trajectory = InitTrajectoryPoints();
 tf = 200;                                   % final time of simulation
 
-%% Disturbances
-m = 0.2;                                    % mass of the object
-Environment = InitEnvironment(false,m);
+%% Disturbances                             
+Environment = InitEnvironment(false, 0.2);     % mass of the object
 
 %% Init Controller and Model
-
 ASMC = InitController();                    % load controller gains
-
-open_system("Hexa_ASMC")                    % open Simulink model
-% sim(mdl)                                    % simulate model
 
 %% Bus Definitions
 DD
+
+%% Run Simulation
+open_system("Hexa_ASMC")                    % open Simulink model
+% sim(mdl)                                    % simulate model
 
 %%
 
