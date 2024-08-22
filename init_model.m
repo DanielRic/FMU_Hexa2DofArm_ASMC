@@ -11,8 +11,9 @@ end
 %% Plant
 % Variant: defines if the simulation will run with the Simscape model or
 % the FMU
-% Plant.Variant = 'SimscapeModel';
-Plant.Variant = 'FMU';
+Plant.Variant = 'SimscapeModel';
+% Plant.Variant = 'FMUModel';
+% Plant.Variant = 'FMU';
 
 % Init Arm Model
 ArmConstants = InitArmConstants();          % load arm's inertia info
@@ -27,7 +28,7 @@ Trajectory = InitTrajectoryPoints();
 tf = 200;                                   % final time of simulation
 
 %% Disturbances                             
-Environment = InitEnvironment(false, 0.2);     % mass of the object
+Environment = InitEnvironment(false, 0.2);  % mass of the object
 
 %% Init Controller and Model
 ASMC = InitController();                    % load controller gains
@@ -37,7 +38,9 @@ DD
 
 %% Run Simulation
 open_system("Hexa_ASMC")                    % open Simulink model
-% sim(mdl)                                    % simulate model
+tic
+sim("Hexa_ASMC")                            % simulate model
+toc
 
 %%
 
