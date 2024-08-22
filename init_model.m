@@ -1,5 +1,4 @@
-
-clear, clc
+ccc
 
 % Open 'HexaProject.prj' to add all needed files to MATLAB path
 try
