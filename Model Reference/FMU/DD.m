@@ -44,3 +44,16 @@ EnvironmentBusDef = Simulink.Bus;
 EnvironmentBusDef.Elements = elems;
 clear elems
 
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'qd';
+elems(1).Dimensions = 8;
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'dqd';
+elems(2).Dimensions = 8;
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'ddqd';
+elems(3).Dimensions = 8;
+
+TrajectoryBusDef = Simulink.Bus;
+TrajectoryBusDef.Elements = elems;
+clear elems

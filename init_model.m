@@ -10,8 +10,8 @@ end
 %% Plant
 % Variant: defines if the simulation will run with the Simscape model or
 % the FMU
-% Plant.Variant = 'SimscapeModel';
-Plant.Variant = 'FMU';
+Variant.Plant = 'SimscapeModel';
+% Variant.Plant = 'FMU';
 
 % Init Arm Model
 ArmConstants = InitArmConstants();          % load arm's inertia info
@@ -39,6 +39,7 @@ open_system("Hexa_ASMC")                    % open Simulink model
 tic
 sim("Hexa_ASMC")                            % simulate model
 toc
+
 
 %%
 
@@ -149,7 +150,7 @@ end
 function Controller = InitController()
 
 %           x      y     z     phi   theta   psi     q1      q2
-lambda = [4.00 ; 4.00 ; 10.0 ; 4.00 ; 4.00 ; 4.00 ; 30.0  ; 90.0  ];
+lambda = [4.00 ; 4.00 ; 10.0 ; 4.00 ; 4.00 ; 4.00 ; 30.0  ; 40.0  ];
 k      = [0.75 ; 0.75 ; 4.00 ; 2.00 ; 2.00 ; 2.00 ; 15.0  ; 28.0  ];
 Kmin   = [0.10 ; 0.10 ; 1.00 ; 0.10 ; 0.10 ; 0.40 ; 1.00  ; 1.00  ];
 mu     = [0.10 ; 0.10 ; 0.20 ; 0.20 ; 0.15 ; 0.50 ; 2.25  ; 5.25  ];
