@@ -10,9 +10,8 @@ end
 %% Plant
 % Variant: defines if the simulation will run with the Simscape model or
 % the FMU
-Plant.Variant = 'SimscapeModel';
-% Plant.Variant = 'FMUModel';
-% Plant.Variant = 'FMU';
+% Plant.Variant = 'SimscapeModel';
+Plant.Variant = 'FMU';
 
 % Init Arm Model
 ArmConstants = InitArmConstants();          % load arm's inertia info
@@ -168,15 +167,15 @@ end
 
 function Environment = InitEnvironment(val,m)
 if val
-    Environment.CMforceX  = timeseries( [0 0 2.5   0 0]',[0  49  50  52  300]);
-    Environment.CMforceY  = timeseries(-[0 0 2.5   0 0]',[0  70  71  73  300]);
-    Environment.CMforceZ  = timeseries(-[0 0 15    0 0]',[0  25  27  30  300]);
-    Environment.CMtorqueX = timeseries( [0 0 0.08  0 0]',[0  49  50  52  300]);
-    Environment.CMtorqueY = timeseries( [0 0 0.08  0 0]',[0  100 101 104 300]);
-    Environment.CMtorqueZ = timeseries(-[0 0 0.08  0 0]',[0  10  11  14  300]);
-    Environment.ee_forceX = timeseries( [0 0 0.80  0 0]',[0  5   6   8   300]);
-    Environment.ee_forceY = timeseries( [0 0 0.80  0 0]',[0  5   6   8   300]);
-    Environment.ee_forceZ = timeseries(-[0 0 0.80  0 0]',[0  5   6   8   300]);
+    Environment.CMforceX  = timeseries( [0 0 3     0 0]',[0  40  50  52  300]);
+    Environment.CMforceY  = timeseries(-[0 0 3     0 0]',[0  70  71  73  300]);
+    Environment.CMforceZ  = timeseries(-[0 0 3     0 0]',[0  25  27  30  300]);
+    Environment.CMtorqueX = timeseries( [0 0 0.2  0 0]',[0  49  50  52  300]);
+    Environment.CMtorqueY = timeseries( [0 0 0.2  0 0]',[0  100 101 104 300]);
+    Environment.CMtorqueZ = timeseries(-[0 0 0.2  0 0]',[0  10  11  14  300]);
+    Environment.ee_forceX = timeseries( [0 0 0.2  0 0]',[0  5   6   8   300]);
+    Environment.ee_forceY = timeseries( [0 0 0.2  0 0]',[0  5   6   8   300]);
+    Environment.ee_forceZ = timeseries(-[0 0 0.2  0 0]',[0  5   6   8   300]);
 else
     Environment.CMforceX  = timeseries(0,0);
     Environment.CMforceY  = timeseries(0,0);
