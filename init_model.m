@@ -10,8 +10,10 @@ end
 %% Plant
 % Variant: defines if the simulation will run with the Simscape model or
 % the FMU
-Variant.Plant = 'SimscapeModel';
-% Variant.Plant = 'FMU';
+% Variant.Plant = 'SimscapeModel';
+Variant.Plant = 'FMU';
+% Variant.Control = 'Model';
+Variant.Control = 'FMU';
 
 % Init Arm Model
 ArmConstants = InitArmConstants();          % load arm's inertia info
