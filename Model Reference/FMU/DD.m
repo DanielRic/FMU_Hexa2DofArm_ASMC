@@ -1,13 +1,16 @@
 
 elems(1) = Simulink.BusElement;
-elems(1).Name = 'control_inputs';
+elems(1).Name = 'u';
 elems(1).Dimensions = 8;
 elems(2) = Simulink.BusElement;
-elems(2).Name = 'motors_vel';
+elems(2).Name = 'FM';
 elems(2).Dimensions = 6;
 elems(3) = Simulink.BusElement;
-elems(3).Name = 'arm_torques';
-elems(3).Dimensions = 2;
+elems(3).Name = 'motors_vel';
+elems(3).Dimensions = 6;
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'arm_torques';
+elems(4).Dimensions = 2;
 
 ControlsBusDef = Simulink.Bus;
 ControlsBusDef.Elements = elems;

@@ -2,7 +2,7 @@ ccc
 
 % Open 'HexaProject.prj' to add all needed files to MATLAB path
 try
-    currentProject;
+    proj = currentProject;
 catch
     openProject("HexaProject.prj");
 end
@@ -37,11 +37,17 @@ ASMC = InitController();                    % load controller gains
 DD
 
 %% Run Simulation
-open_system("Hexa_ASMC")                    % open Simulink model
+Model.Name = "Hexa_ASMC";
+Model.TimeStamp = datestr(datetime('now'), 'yyyymmddTHHMMSS');
+% open_system(Model.Name)                    % open Simulink model
 tic
-sim("Hexa_ASMC")                            % simulate model
-toc
+sim(Model.Name)                            % simulate model
+fprintf('\nSimulation time: %f\n',toc)
 
+%% Save results
+if exist('logsout','var')
+    saveResults(logsout,Variant,ASMC,Model)
+end
 
 %%
 
