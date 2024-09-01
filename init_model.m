@@ -1,11 +1,10 @@
-ccc
-
 % Open 'HexaProject.prj' to add all needed files to MATLAB path
 try
     proj = currentProject;
 catch
     openProject("HexaProject.prj");
 end
+ccc
 
 %% Plant
 % Variant: defines if the simulation will run with the Simscape model or
@@ -39,7 +38,7 @@ DD
 %% Run Simulation
 Model.Name = "Hexa_ASMC";
 Model.TimeStamp = datestr(datetime('now'), 'yyyymmddTHHMMSS');
-% open_system(Model.Name)                    % open Simulink model
+open_system(Model.Name)                    % open Simulink model
 tic
 sim(Model.Name)                            % simulate model
 fprintf('\nSimulation time: %f\n',toc)
