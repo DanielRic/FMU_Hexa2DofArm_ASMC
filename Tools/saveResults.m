@@ -12,9 +12,10 @@ function saveResults(logsout,Variant,ControlParams,Model)
     folder = append('Results\Plant',Variant.Plant,'_Controls',Variant.Control,'_',Model.TimeStamp);
     mkdir(folder)
     fprintf('Saving results...\n')
-    save(append(folder,'\SimResults.mat'),names{:},'ControlParams')
+    filename = append(folder,'\SimResults.mat');
+    save(filename,names{:},'ControlParams')
     writetable(T,append(folder,'\SimResults.xlsx'))
-    fprintf('Results saved\n')
+    fprintf('Results saved in: %s\n',filename)
 end
 
 function Struct = reduceStruct(Struct)
