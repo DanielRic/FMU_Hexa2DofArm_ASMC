@@ -39,9 +39,7 @@ DD
 Model.Name = "Hexa_ASMC";
 Model.TimeStamp = datestr(datetime('now'), 'yyyymmddTHHMMSS');
 open_system(Model.Name)                    % open Simulink model
-tic
-sim(Model.Name)                            % simulate model
-fprintf('\nSimulation time: %f\n',toc)
+simHexa(Model.Name)                        % simulate model
 
 %% Save results
 if exist('logsout','var')
@@ -200,4 +198,10 @@ Environment.PickObj = struct('Radius', 0.023,...
                  'Mass', m,...
                  'Time', [48, 143]);
 
+end
+
+function simHexa(mdl)
+    simTime = tic();
+    sim(mdl);
+    fprintf('Execution time: %f\n',toc(simTime))
 end
